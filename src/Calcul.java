@@ -93,12 +93,15 @@ public  class Calcul {
                     System.out.println("throws Exception ");
                 }
             }else {
-                try {
+                try {if(number1 <= number2) {
+                    System.out.println("throws Exception ");}
 
+            else {
                     result = calculate(number1, number2, znac);
                     String resultRom = romanSolution(result);
                     System.out.println(resultRom);
-                } catch (NumberFormatException | ArrayIndexOutOfBoundsException | ArithmeticException e) {
+                }
+                 }catch (NumberFormatException | ArrayIndexOutOfBoundsException | ArithmeticException e) {
                     System.out.println("throws Exception");//ArrayIndexOutOfBoundsException
                 }
             }
@@ -154,7 +157,7 @@ public  class Calcul {
     }
 
     public static String romanSolution(int arabNumeral) {
-        String[] romanAll = {"O", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
+        String[] romanAll = {"throws Exception", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
                 "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
                 "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX",
                 "XXX", "XXXI", "XXXII", "XXXIII", "XXXIV", "XXXV", "XXXVI", "XXXVII", "XXXVIII",
